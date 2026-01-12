@@ -1,0 +1,16 @@
+name: cs135_26s_env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - git
+  ## Scientific Computing
+  - scipy=1.17
+  - numpy=2.4
+  ## Visualization
+  - notebook=7.5
+  - seaborn=0.13
+  ## Data I/O
+  - pandas=2.3
+  ## Machine Learning
+  - scikit-learn=1.8
