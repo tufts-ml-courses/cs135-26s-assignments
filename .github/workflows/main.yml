@@ -1,0 +1,37 @@
+name: Sync all but labs to sections
+
+on:
+  push:
+    branches:
+      - main
+      paths-ignore:
+      - 'labs/**'
+
+jobs:
+  sync-branches:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        target-branch: [9am, 12pm]
+    
+    steps:
+      - name: Checkout Main
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Restore all but labs
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          git switch ${{ matrix.target-branch }}
+          
+          git restore --source main --worktree --staged -- . ":!labs"
+          
+          if git diff --staged --quiet; then
+            echo "No changes for ${{ matrix.target-branch }}"
+          else
+            git commit -m "Sync from main to ${{ matrix.target-branch }}"
+            git push origin ${{ matrix.target-branch }}
+          fi
