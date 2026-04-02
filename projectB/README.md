@@ -4,8 +4,9 @@ Instruction webpage:
 <https://www.cs.tufts.edu/cs/135/2026s/projectB.html>
 
 Images can be found at the following Google Drive links:
-<https://drive.google.com/file/d/1JTvMkEaR3AxqAagYzfLebnS_RavA7agR/view?usp=drive_link>
-<https://drive.google.com/file/d/1bQxyUXwvUn2cPjb5gIp-jB3CUpqD4Ca1/view?usp=drive_link>
+
+* <https://drive.google.com/file/d/1JTvMkEaR3AxqAagYzfLebnS_RavA7agR/view?usp=drive_link>
+* <https://drive.google.com/file/d/1bQxyUXwvUn2cPjb5gIp-jB3CUpqD4Ca1/view?usp=drive_link>
 
 
 ## Data citation
