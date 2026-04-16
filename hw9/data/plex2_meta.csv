@@ -1,0 +1,11 @@
+sample,cell_line,time,condition
+WT_0Min_1,WT,0,WT 0min
+WT_0Min_2,WT,0,WT 0min
+X.NPC1_0Min_1,NPC1,0,NPC1 0min
+X.NPC1_0Min_2,NPC1,0,NPC1 0min
+WT_60Min_1,WT,60,WT 60min
+WT_60Min_2,WT,60,WT 60min
+X.RAB7A_60Min_1,RAB7A,60,RAB7A 60min
+X.RAB7A_60Min_2,RAB7A,60,RAB7A 60min
+X.NPC1_60Min_1,NPC1,60,NPC1 60min
+X.NPC1_60Min_2,NPC1,60,NPC1 60min
